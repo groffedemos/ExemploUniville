@@ -23,7 +23,7 @@ public class ConversorTemperaturasController : ControllerBase
             $"Recebida temperatura para conversão: {temperatura}");
 
         // FIXME: Comentário para simulação de falha
-        /*if (temperatura < -459.67)
+        if (temperatura < -459.67)
         {
             var mensagemErro =
                 $"Valor de temperatura em Fahrenheit invalido: {temperatura}";
@@ -33,7 +33,7 @@ public class ConversorTemperaturasController : ControllerBase
                 {
                     Mensagem = mensagemErro
                 });
-        }*/
+        }
 
         var resultado = new Temperatura(temperatura);
         _logger.LogInformation(
