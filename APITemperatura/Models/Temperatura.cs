@@ -19,10 +19,10 @@ public class Temperatura
 
         Fahrenheit = temperaturaFahrenheit;
 
-        Celsius = (temperaturaFahrenheit - 32.0) / 1.8; // FIXME: Simulação de falha
-        Kelvin = Celsius + 273.15; // FIXME: Simulação de falha
+        //Celsius = (temperaturaFahrenheit - 32.0) / 1.8; 
+        //Kelvin = Celsius + 273.15; 
 
-        //Celsius = Math.Round((temperaturaFahrenheit - 32.0) / 1.8, 2);
-        //Kelvin = Math.Round(Celsius + 273.15, 2);
+        Celsius = Math.Round((temperaturaFahrenheit - 32.0) / 1.8, 2);
+        Kelvin = Math.Round(Celsius + 273.15, 2);
     }    
 }

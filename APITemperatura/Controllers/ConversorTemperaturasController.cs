@@ -22,7 +22,6 @@ public class ConversorTemperaturasController : ControllerBase
         _logger.LogInformation(
             $"Recebida temperatura para conversão: {temperatura}");
 
-        // FIXME: Comentário para simulação de falha
         if (temperatura < -459.67)
         {
             var mensagemErro =
